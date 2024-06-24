@@ -1,0 +1,12 @@
+var a= prompt("Enter a number:");
+var b= prompt("Enter another number:");
+var c= prompt("Enter oprator:");
+if (c=="+"){alert(a+b)}
+if (c=="-"){alert(a-b)}
+if (c=="*"){alert(a*b)}
+if (c=="/"){
+    if(b==0){alert("enter valid number it is not divisible by zero:")}
+    else
+    {(alert(a/b))}
+}
+
