@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = Number(prompt("enter size of array;"))
+         let arr=[n];
+         let max=0
+
+         for (let i =0 ;i<n;i++ ){
+            arr[i]=Number(prompt("enter element "+ i +"element:"))
+         }
+
+        for (let i =0 ;i<arr.length;i++ ){
+            if(arr[i]>max){
+                max=arr[i]
+                }
+         }
+document.write(max)
+    </script>
+</body>
+</html>

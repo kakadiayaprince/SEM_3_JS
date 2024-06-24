@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let word = prompt("enter sentence:")
+        const words = word.split(' ');
+        let word1 =  prompt("enter word you want to serach:")
+      
+      for(let i = 0 ;i<words.length ;i++){
+        if(word1 == words[i]){
+            document.write("your word is at " + i +"index")
+        }
+      }
+
+    </script>
+</body>
+</html>

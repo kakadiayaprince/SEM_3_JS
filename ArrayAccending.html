@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = Number(prompt("enter size of array;"))
+        let arr = [n];
+        let temp = 0
+
+        for (let i = 0; i < n; i++) {
+            arr[i] = Number(prompt("enter element " + i+1 + "element:"))
+        }
+
+        for (let i = 0; i < n; i++) {
+            for (let j = i + 1; j < n; j++) {
+                if (arr[i] > arr[j]) {
+                   temp = arr[i];
+                   arr[i] = arr[j];
+                   arr[j] = temp;
+                }
+            }
+        }
+        for (let i = 0; i < n; i++) {
+            document.write(arr[i] + " ");
+        }
+    </script>
+
+</body>
+
+</html>
