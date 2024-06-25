@@ -15,16 +15,16 @@ public class DeleteNumber {
         }
         System.out.println("Enter the position where you want to delete the number: ");
         int index = sc.nextInt();
-
+        index--;
         int newarray[] = new int[size - 1];
-        for (int i = 0; i < index - 1; i++) {
+        for (int i = 0; i < index; i++) {
             newarray[i] = array[i];
         }
-        for (int i = index; i < size - 1; i++) {
+        for (int i = index; i < array.length - 1; i++) {
             newarray[i] = array[i + 1];
         }
 
-        for (int i = 0; i < size - 1; i++) {
+        for (int i = 0; i < newarray.length; i++) {
             System.out.println("new array after insering:" + newarray[i]);
         }
 
